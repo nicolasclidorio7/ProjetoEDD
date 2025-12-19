@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fila de Prioridade - Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Fila de Prioridade - Hospital</h1>
+
+    <form id="form">
+      <input id="name" placeholder="Nome do paciente" required />
+      <select id="priority">
+        <option value="1">1 - Emergência</option>
+        <option value="2">2 - Muito urgente</option>
+        <option value="3">3 - Urgente</option>
+        <option value="4">4 - Pouco urgente</option>
+        <option value="5">5 - Não urgente</option>
+      </select>
+      <button type="submit">Enfileirar</button>
+    </form>
+
+    <div class="controls">
+      <button id="nextBtn">Atender próximo</button>
+      <button id="clearBtn">Limpar fila</button>
+    </div>
+
+    <section class="queue">
+      <h2>Fila (prioridade → ordem)</h2>
+      <ul id="list"></ul>
+    </section>
+
+    <small>Prioridade menor = atendimento antes. Código simples e funcional.</small>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

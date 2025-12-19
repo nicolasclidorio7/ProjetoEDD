@@ -1,0 +1,8 @@
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{display:flex;align-items:flex-start;justify-content:center;padding:28px;background:#f6f8fb}
+main{width:720px;background:#fff;padding:18px;border-radius:8px;box-shadow:0 8px 20px rgba(10,20,40,0.06)}
+form{display:flex;gap:8px;margin-bottom:12px}
+input,button{padding:8px;border-radius:6px;border:1px solid #dde6ef}
+.controls{display:flex;gap:8px;margin-bottom:12px}
+.queue ol{padding-left:20px}
+.queue li{padding:8px;border-radius:6px;border:1px solid #eef5ff;background:#fbfeff;margin-bottom:6px}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fila Pole Position (F1)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Fila Pole Position - F1</h1>
+    <form id="form">
+      <input id="driver" placeholder="Nome do piloto" required />
+      <input id="time" type="number" step="0.001" placeholder="Tempo (s)" required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="controls">
+      <button id="startBtn">Pegar pole</button>
+      <button id="clearBtn">Limpar lista</button>
+    </div>
+
+    <section class="queue">
+      <h2>Ordem (melhor tempo → pole)</h2>
+      <ol id="list"></ol>
+    </section>
+
+    <small>Menor tempo tem prioridade (pole position primeiro).</small>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

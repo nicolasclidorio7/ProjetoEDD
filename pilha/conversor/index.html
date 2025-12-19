@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conversor Decimal → Binário (Pilha)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Conversor Decimal → Binário (Pilha)</h1>
+    <div class="controls">
+      <input id="numInput" type="number" min="0" placeholder="Digite um inteiro >= 0" />
+      <button id="convertBtn">Converter</button>
+      <button id="stepBtn" disabled>Passo</button>
+      <button id="playBtn" disabled>Play</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <section class="view">
+      <div class="panel">
+        <h2>Pilha</h2>
+        <div id="stack" class="stack"></div>
+      </div>
+      <div class="panel">
+        <h2>Resultado</h2>
+        <div id="result" class="result">—</div>
+        <div class="info">Complexidade: <strong>O(log n)</strong></div>
+      </div>
+    </section>
+
+    <small class="help">Validação: inteiro não-negativo. Use <code>Passo</code> ou <code>Play</code> para visualizar empilhar/desempilhar.</small>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

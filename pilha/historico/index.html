@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Histórico de Edição + Player (Pilha)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Histórico de Edição com Undo/Redo e Player (Pilha)</h1>
+
+    <div class="controls">
+      <button id="undoBtn" disabled>Undo</button>
+      <button id="redoBtn" disabled>Redo</button>
+      <button id="playBtn">Play</button>
+      <label>Velocidade: <input id="speed" type="range" min="100" max="1500" step="100" value="400"/></label>
+      <button id="clearHistory">Limpar Histórico</button>
+    </div>
+
+    <textarea id="editor" placeholder="Comece a digitar..." rows="10"></textarea>
+
+    <div class="timeline">
+      <h3>Eventos ({<span id="count">0</span>})</h3>
+      <div id="events" class="events"></div>
+    </div>
+
+    <small class="help">O app grava snaps (debounced). Use Undo/Redo para navegar. Play reproduz a sequência cronológica.</small>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
